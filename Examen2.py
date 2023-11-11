@@ -25,6 +25,18 @@ class MiClase:
         if any(song is None for song in lista):
             return False
         return True
+      
+    def Encuentra(self, lista, elemento):
+        if isinstance(elemento, int):
+            if lista == []:
+                return False
+            elif lista[0] == elemento:
+                return True
+            else:
+                return self.Encuentra(lista[1:], elemento) 
+        else:
+            return "Elemento dado debe ser entero"
+                
 # ################################################################################################
 # #Ejemplo de ejecución
 # # Crear un objeto de la clase MiClase
