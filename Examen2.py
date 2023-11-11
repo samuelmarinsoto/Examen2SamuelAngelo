@@ -36,7 +36,8 @@ class MiClase:
                 return self.Encuentra(lista[1:], elemento) 
         else:
             return "Elemento dado debe ser entero"
-                
+
+# comentario arbitrario para hacer un cambio que se pueda crear PR
 # ################################################################################################
 # #Ejemplo de ejecución
 # # Crear un objeto de la clase MiClase
