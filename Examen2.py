@@ -25,7 +25,7 @@ class MiClase:
         if any(song is None for song in lista):
             return False
         return True
-
+      
     def Encuentra(self, lista, elemento):
         if isinstance(elemento, int):
             if lista == []:
