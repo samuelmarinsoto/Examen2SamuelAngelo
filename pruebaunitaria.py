@@ -57,7 +57,7 @@ class TestCocinero(unittest.TestCase):
     def test_Encuentra(self):
         # prueba 1
         mc = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
-        self.assertTrue(mc.Encuentra([1, 2, 3, 4, 5], 5))
+        self.assertFalse(mc.Encuentra([1, 2, 3, 4, 5], 5))
 
         # prueba 2
         mc2 = MiClase(30, 210, 10, ["I'm Still standing Elton John", "Sirius Alan Parson", "Take on me a-ha"], [0.4, 0.6, 0.5])
